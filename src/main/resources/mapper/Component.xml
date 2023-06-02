@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zengcy.sp1.mapper.ComponentMapper">
+
+    <resultMap type="com.zengcy.sp1.entity.ComponentEntity" id="all">
+        <id     property="componentId"       	column="component_id"      		/>
+        <result property="componentGroupId"     column="component_group_id"    	/>
+        <result property="componentUrn"     column="component_urn"    	/>
+    </resultMap>
+
+    <select id="findList"  resultMap="all">
+        SELECT * FROM mysql.component
+        WHERE TRUE;
+    </select>
+</mapper>

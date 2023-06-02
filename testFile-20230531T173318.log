@@ -1,0 +1,177 @@
+319  [restartedMain] DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/zengchenyang/IdeaProjects/sp1/target/classes/]
+360  [restartedMain] DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+370  [restartedMain] DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/Users/zengchenyang/IdeaProjects/sp1/target/classes/]
+370  [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Included patterns for restart : []
+370  [restartedMain] DEBUG o.s.b.d.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+370  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+370  [restartedMain] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@36c8edc8
+374  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+378  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+430  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+456  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+458  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+458  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+458  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+459  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+459  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+460  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+461  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'configurationPropertiesBeans'
+461  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration'
+462  [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c727a17e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+466  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'bootstrapImportSelectorConfiguration'
+467  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration'
+469  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nacosPropertySourceLocator'
+469  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.alibaba.cloud.nacos.NacosConfigBootstrapConfiguration'
+470  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nacosConfigProperties'
+474  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'nacosPropertySourceLocator' via factory method to bean named 'nacosConfigProperties'
+476  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.cloud.config-org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties'
+476  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration'
+476  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties'
+477  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'environmentDecryptApplicationListener'
+478  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'configurationPropertiesRebinder'
+478  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'configurationPropertiesRebinder' via factory method to bean named 'configurationPropertiesBeans'
+480  [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+485  [restartedMain] DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   NacosConfigBootstrapConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.nacos.config.enabled) matched (OnPropertyCondition)
+
+   NacosConfigBootstrapConfiguration#nacosConfigProperties matched:
+      - @ConditionalOnMissingBean (types: com.alibaba.cloud.nacos.NacosConfigProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+486  [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+487  [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+487  [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+487  [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5120572b
+487  [restartedMain] DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.zengcy.sp1.Sp1Application with URLs [file:/Users/zengchenyang/IdeaProjects/sp1/target/classes/]
+504  [restartedMain] DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application failed to start with classpath: [file:/Users/zengchenyang/IdeaProjects/sp1/target/classes/]
+505  [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:554)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:500)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:467)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$6(ConfigFileApplicationListener.java:448)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$7(ConfigFileApplicationListener.java:447)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:444)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:332)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:207)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:190)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:177)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.zengcy.sp1.Sp1Application.main(Sp1Application.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning an alias
+ in 'reader', line 37, column 18:
+            include: *
+                     ^
+expected alphabetic or numeric character, but found  (0)
+ in 'reader', line 37, column 19:
+            include: *
+                      ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanAnchor(ScannerImpl.java:1444)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchAlias(ScannerImpl.java:916)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:364)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:586)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:124)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:161)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:572)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:526)
+	... 28 common frames omitted

@@ -1,0 +1,30 @@
+spring:
+  banner:
+    charset: UTF-8
+    location: classpath:banner.txt
+  application:
+    name: sp1
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://localhost:3306/mysql?useSSL=false&autoReconnect=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+
+server:
+  port: 8001
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zengcy.sp1.entity
+  configuration:
+    cache-enabled: true
+    use-generated-keys: true
+    default-executor-type: REUSE
+    use-actual-param-name: true
